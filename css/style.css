@@ -7,7 +7,9 @@
 
 /*Todo Custom Properties */
 
-/* :root {} */
+:root {
+    --primary-color: #7D7F84;
+}
 
 
 /*# Generics */
@@ -15,12 +17,42 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #141922;
-    color: #7D7F84;
+    color: var(--primary-color);
 }
 
 img {
     max-width: 100%;
     display: block;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 0.9rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+
+}
+
+section {
+    margin-top: 30px;
 }
 
 /** Utils */
@@ -29,16 +61,23 @@ img {
 
 /*| ROW */
 .row {
-    display: flex;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: 50%;
+    padding: 5px;
+    text-align: center;
 }
 
 /*| CONTAINER */
+
 .container {
-    max-width: 900px;
+    max-width: 100%;
     margin: 0 auto;
 }
-
 
 /** main */
 
@@ -73,14 +112,17 @@ nav {
 .main-content {
     flex-basis: calc(100% - 50px);
     position: relative;
-
 }
+
+/*^ HEADER */
 
 header {
     background-color: #080B12;
     height: 100px;
-    text-align: right;
     line-height: 100px;
+    text-align: right;
+    padding-right: 5px;
+
     position: sticky;
     top: 0;
     right: 0;
@@ -88,14 +130,44 @@ header {
     z-index: 1;
 }
 
-section {
+.btn {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #080B12;
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+
+}
+
+/*^ RIGHT MAIN */
+
+.main-content .right-main {
+    padding: 20px;
     height: calc(100vh - 170px);
     overflow-y: auto;
 }
 
+.main-content .right-main ul {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    row-gap: 40px;
+}
 
+#recently>h2 {
+    margin-bottom: 30px;
+}
 
-
+section>h4 {
+    margin-bottom: 30px;
+}
 
 /** footer */
 
