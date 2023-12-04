@@ -14,6 +14,13 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #141922;
+    color: #7D7F84;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 /** Utils */
@@ -23,75 +30,8 @@ body {
 /*| ROW */
 .row {
     display: flex;
-    flex-wrap: wrap;
+    position: relative;
 }
-
-.row.cols-2>.col {
-    flex-basis: calc(100% / 2);
-}
-
-.row.cols-3>.col {
-    flex-basis: calc(100% / 3);
-}
-
-.row.cols-4>.col {
-    flex-basis: calc(100% / 4);
-}
-
-.row.cols-5>.col {
-    flex-basis: calc(100% / 5);
-}
-
-.row.cols-6>.col {
-    flex-basis: calc(100% / 6);
-}
-
-/*| GATTER */
-/* 10 */
-.row.g-10 {
-    margin: 0 -10px;
-}
-
-.row.g-10>.col {
-    padding: 0 10px;
-}
-
-/* 20 */
-.row.g-20 {
-    margin: 0 -20px;
-}
-
-.row.g-20>.col {
-    padding: 0 20px;
-}
-
-/* 30 */
-.row.g-30 {
-    margin: 0 -30px;
-}
-
-.row.g-30>.col {
-    padding: 0 30px;
-}
-
-/* 40 */
-.row.g-40 {
-    margin: 0 -40px;
-}
-
-.row.g-40>.col {
-    padding: 0 40px;
-}
-
-/* 50 */
-.row.g-50 {
-    margin: 0 -50px;
-}
-
-.row.g-50>.col {
-    padding: 0 50px;
-}
-
 
 /*| CONTAINER */
 .container {
@@ -100,10 +40,72 @@ body {
 }
 
 
-/** header  */
-
-
 /** main */
+
+main {
+    height: calc(100vh - 70px);
+}
+
+/*# LEFT NAVABAR */
+
+nav {
+    width: 50px;
+    height: calc(100vh - 70px);
+    background-color: #000;
+    padding: 10px;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#big-logo {
+    display: none;
+}
+
+
+
+/*# MAIN-CONTENT */
+
+.main-content {
+    flex-basis: calc(100% - 50px);
+    position: relative;
+
+}
+
+header {
+    background-color: #080B12;
+    height: 100px;
+    text-align: right;
+    line-height: 100px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+section {
+    height: calc(100vh - 170px);
+    overflow-y: auto;
+}
+
+
+
 
 
 /** footer */
+
+footer {
+    height: 70px;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
