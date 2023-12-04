@@ -61,13 +61,12 @@ nav {
 
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 #big-logo {
     display: none;
 }
-
-
 
 /*# MAIN-CONTENT */
 
@@ -103,9 +102,88 @@ section {
 footer {
     height: 70px;
     background-color: #282828;
+    color: #fff;
+    font-size: 0.6rem;
+    padding: 10px;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/*# LEFT FOOTER */
+
+.left-footer,
+.right-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 20% 0 0;
+}
+
+.left-footer>picture {
+    width: 30px;
+}
+
+/*# CENTRAL FOOTER */
+
+.central-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cfoot-top,
+.cfoot-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.cfoot-top {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    gap: 25px;
+}
+
+.fa-circle-play {
+    font-size: 1.6rem;
+    margin: 0 20px;
+}
+
+.cfoot-bottom .volume-line {
+    width: calc(1px + 30vw);
+}
+
+/*# RIGHT FOOTER */
+
+.right-footer {
+    justify-content: flex-end;
+}
+
+.volume {
+    display: flex;
+    gap: 10px;
+}
+
+.volume-line {
+    height: 5px;
+    width: 80px;
+    background-color: #5A5A5A;
+    border-radius: 15px;
+}
+
+.line-progress {
+    height: 5px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: #C1C1C1;
 }
