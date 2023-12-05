@@ -2,17 +2,13 @@
 
 @media screen and (min-width: 639px) {
     nav {
-        width: 300px;
+        width: 250px;
         padding: 20px;
         padding-bottom: 5px;
     }
 
     .hidden {
         display: block;
-    }
-
-    .main-content {
-        flex-basis: calc(100% - 300px);
     }
 
     #small-logo {
@@ -27,6 +23,31 @@
         gap: 10px;
     }
 
+    .footer {
+        gap: 30px;
+    }
 
+    .volume {
+        gap: 10px;
+    }
 
+    .volume-line {
+        width: 100px;
+    }
+}
+
+/*# SOPRA 878px  */
+
+@media screen and (min-width: 878px) {
+    .col {
+        flex-basis: 25%;
+    }
+}
+
+/*# SOPRA 1440px  */
+
+@media screen and (min-width: 1440px) {
+    .col {
+        flex-basis: calc(100% / 6);
+    }
 }

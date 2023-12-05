@@ -32,6 +32,10 @@ a {
     font-weight: 600;
 }
 
+a:hover {
+    color: #fff;
+}
+
 ul {
     list-style-type: none;
 }
@@ -105,6 +109,7 @@ nav {
     flex-shrink: 0;
     padding: 10px;
 
+    font-size: 0.8rem;
     font-weight: 600;
 
 
@@ -136,12 +141,15 @@ nav {
     margin: 10px 0;
 }
 
-.playlist {
-    margin-top: 30px;
+.nav-list-item>*,
+.playlist-ul li,
+#box-profile>div>* {
+    cursor: pointer;
 }
 
-.playlist a {
-    filter: brightness(0.5);
+
+.playlist {
+    margin-top: 30px;
 }
 
 .add-playlist {
@@ -158,13 +166,21 @@ nav {
 }
 
 .playlist-ul {
-    filter: brightness(0.5);
     line-height: 2.5rem;
     height: 200px;
     margin-top: 20px;
     overflow: auto;
 }
 
+
+.nav-list-item>*:hover,
+.playlist-ul li:hover {
+    color: #fff;
+}
+
+.add-playlist:hover {
+    background-color: #fff;
+}
 
 /*# BOX PROFILE */
 
@@ -212,9 +228,11 @@ hr {
 header {
     background-color: rgba(8, 11, 18, 0.9);
     height: 80px;
-    line-height: 80px;
-    text-align: right;
-    padding-right: 5px;
+    padding-right: 15px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
     position: sticky;
     top: 0;
@@ -223,23 +241,28 @@ header {
 }
 
 .btn {
+
     font-size: 0.8rem;
     text-transform: uppercase;
     color: #fff;
     background-color: #080B12;
-    padding: 10px 30px;
+    padding: 10px 35px;
+    display: inline-block;
     border: 1px solid #fff;
     border-radius: 20px;
-
 }
 
-/*^ RIGHT MAIN */
+.btn:hover {
+    transform: scale(1.1);
+}
 
-.main-content .right-main {
+/*^ MAIN */
+
+main {
     padding: 20px;
 }
 
-.main-content .right-main ul {
+main ul {
     text-transform: uppercase;
     font-size: 0.8rem;
     margin-bottom: 40px;
@@ -251,12 +274,16 @@ header {
     row-gap: 40px;
 }
 
+section>h4 {
+    margin-bottom: 30px;
+}
+
 #recently>h2 {
     margin-bottom: 30px;
 }
 
-section>h4 {
-    margin-bottom: 30px;
+#popular .card img {
+    border-radius: 50%;
 }
 
 /** footer */
@@ -271,9 +298,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
-
 
 
 /*# LEFT FOOTER */
@@ -283,7 +309,6 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
-    flex: 20% 0 0;
 }
 
 .left-footer {
@@ -292,8 +317,8 @@ footer {
 }
 
 .left-footer picture {
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     flex-shrink: 0;
 }
 
@@ -312,7 +337,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 60%;
 }
 
 .cfoot-top,
@@ -346,12 +370,12 @@ footer {
 
 .volume {
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 
 .volume-line {
     height: 5px;
-    width: 65px;
+    width: 70px;
     background-color: #5A5A5A;
     border-radius: 15px;
 }
