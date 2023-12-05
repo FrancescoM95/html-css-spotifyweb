@@ -48,18 +48,18 @@
 
                     <div class="nav-list">
 
-                        <div class="nav-list-item">
-                            <img src="img/home.svg" alt="home">
+                        <div class="nav-list-item selected">
+                            <img src="img/home.svg" id="home" alt="home">
                             <span class="hidden">Home</span>
                         </div>
 
                         <div class="nav-list-item">
-                            <img src="img/search.svg" alt="search">
+                            <img src="img/search.svg" id="search" alt="search">
                             <span class="hidden">Cerca</span>
                         </div>
 
                         <div class="nav-list-item">
-                            <img src="img/libreria.svg" alt="libreria">
+                            <img src="img/libreria.svg" id="libreria" alt="libreria">
                             <span class="hidden">La tua libreria</span>
                         </div>
                     </div>
@@ -132,6 +132,7 @@
                             <div class="col">
                                 <div class="card">
                                     <img src="img/metal_lifting.jpg" alt="metal_lifting">
+                                    <div class="layout"><i class="far fa-circle-play"></i></div>
                                 </div>
                                 <h3>Heavy Metal</h3>
                                 <h4>Subtitle</h4>
@@ -140,6 +141,7 @@
                             <div class="col">
                                 <div class="card">
                                     <img src="img/stranger.jpeg" alt="stranger">
+                                    <div class="layout"><i class="far fa-circle-play"></i></div>
                                 </div>
                                 <h3>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
                                 <h4>Kyle Dixon & Michael Stein</h4>
@@ -148,6 +150,7 @@
                             <div class="col">
                                 <div class="card">
                                     <img src="img/aquietplace.jpeg" alt="aquietplace">
+                                    <div class="layout"><i class="far fa-circle-play"></i></div>
                                 </div>
                                 <h3>A quiet place</h3>
                                 <h4>Subtitle</h4>
@@ -156,6 +159,7 @@
                             <div class="col">
                                 <div class="card">
                                     <img src="img/split.jpeg" alt="split">
+                                    <div class="layout"><i class="far fa-circle-play"></i></div>
                                 </div>
                                 <h3>Split</h3>
                                 <h4>Subtitle</h4>
@@ -164,6 +168,7 @@
                             <div class="col">
                                 <div class="card">
                                     <img src="img/cure.jpeg" alt="cure">
+                                    <div class="layout"><i class="far fa-circle-play"></i></div>
                                 </div>
                                 <h3>A cure for wellness</h3>
                                 <h4>Subtitle</h4>
@@ -172,6 +177,7 @@
                             <div class="col">
                                 <div class="card">
                                     <img src="img/sinister.jpeg" alt="sinister">
+                                    <div class="layout"><i class="far fa-circle-play"></i></div>
                                 </div>
                                 <h3>Sinister</h3>
                                 <h4>Subtitle</h4>
@@ -190,6 +196,7 @@
                             <div class="col">
                                 <div class="card">
                                     <img src="img/radar.jpeg" alt="radar">
+                                    <div class="layout"><i class="far fa-circle-play"></i></div>
                                 </div>
                                 <h3>Release Radar</h3>
                             </div>
@@ -197,6 +204,7 @@
                             <div class="col">
                                 <div class="card">
                                     <img src="img/mixdaily.jpeg" alt="mixdaily">
+                                    <div class="layout"><i class="far fa-circle-play"></i></div>
                                 </div>
                                 <h3>Daily Mix 1</h3>
                             </div>
@@ -214,6 +222,7 @@
                             <div class="col">
                                 <div class="card">
                                     <img src="img/youg.jpeg" alt="youg">
+                                    <div class="layout"><i class="far fa-circle-play"></i></div>
                                 </div>
                                 <h3>Youg</h3>
                                 <h4>Subtitle</h4>
@@ -222,6 +231,7 @@
                             <div class="col">
                                 <div class="card">
                                     <img src="img/einaudi.jpeg" alt="einaudi">
+                                    <div class="layout"><i class="far fa-circle-play"></i></div>
                                 </div>
                                 <h3>Ludovico Einaudi</h3>
                                 <h4>Subtitle</h4>
@@ -272,7 +282,11 @@
             <div class="cfoot-bottom">
                 <span>0:25</span>
                 <div class="volume-line">
-                    <div class="line-progress"></div>
+                    <div class="line-progress">
+                        <div class="line-selected">
+                            <div class="line-selector"></div>
+                        </div>
+                    </div>
                 </div>
                 <span>4:35</span>
             </div>
@@ -289,7 +303,11 @@
             </div>
 
             <div class="volume-line">
-                <div class="line-progress"></div>
+                <div class="line-progress">
+                    <div class="line-selected">
+                        <div class="line-selector"></div>
+                    </div>
+                </div>
             </div>
 
         </div>

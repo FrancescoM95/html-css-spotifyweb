@@ -27,6 +27,10 @@
         gap: 30px;
     }
 
+    .left-footer h3 {
+        margin-right: 30px;
+    }
+
     .volume {
         gap: 10px;
     }
@@ -41,6 +45,10 @@
 @media screen and (min-width: 878px) {
     .col {
         flex-basis: 25%;
+    }
+
+    .left-footer h3 {
+        margin-right: 50px;
     }
 }
 
