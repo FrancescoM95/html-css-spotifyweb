@@ -25,16 +25,16 @@
 
     <!--§ stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
 <body>
 
 
-    <!--* main -->
-    <main>
+    <div class="upper-content">
 
-        <div class="row">
+        <div class="flex-wrapper">
 
             <!--# LEFT NAVBAR -->
             <nav>
@@ -42,34 +42,72 @@
                 <div class="navbar-top">
 
                     <div class="box-logo">
-                        <img src="img/logo.svg" id="big-logo" alt="logo Spotify">
+                        <img src="img/logo.svg" id="big-logo" class="hidden" alt="logo Spotify">
                         <img src="img/logo-small.svg" id="small-logo" alt="logo Spotify small">
                     </div>
 
                     <div class="nav-list">
-                        <img src="img/home.svg" alt="home">
-                        <img src="img/search.svg" alt="search">
-                        <img src="img/libreria.svg" alt="libreria">
+                        <div class="nav-list-item">
+                            <img src="img/home.svg" alt="home">
+                            <span class="hidden">Home</span>
+                        </div>
+
+                        <div class="nav-list-item">
+                            <img src="img/search.svg" alt="search">
+                            <span class="hidden">Cerca</span>
+                        </div>
+
+                        <div class="nav-list-item">
+                            <img src="img/libreria.svg" alt="libreria">
+                            <span class="hidden">La tua libreria</span>
+                        </div>
                     </div>
 
-                    <div class="playlist">
+                    <div class="playlist hidden">
+
+                        <h3>PLAYLIST</h3>
+                        <a href="#"><span class="add-playlist">+</span> Crea playlist</a>
+                        <div class="playlist-ul">
+                            <ul>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                                <li>Nome Playlist</li>
+                            </ul>
+                        </div>
 
                     </div>
                 </div>
 
                 <div class="box-profile">
-                    <img src="img/download.svg" alt="download" id="download">
-                    <img src="img/profile.svg" alt="profile" id="profile">
+                    <div>
+                        <img src="img/download.svg" alt="download" id="download">
+                        <a class="hidden" href="#">Installa app</a>
+                    </div>
+                    <hr class="hidden">
+                    <div>
+                        <img src="img/profile.svg" alt="profile" id="profile">
+                        <h3 class="hidden">John Doe</h3>
+                    </div>
+
                 </div>
             </nav>
 
+            <!--* main -->
             <div class="main-content">
 
                 <header>
                     <a href="#" class="btn">effettua l'upgrade</a>
                 </header>
 
-                <div class="right-main">
+                <main class="right-main">
 
                     <!--# LISTA LINK -->
                     <div class="container">
@@ -187,16 +225,13 @@
                         </div>
                     </section>
 
-                </div>
+                </main>
 
             </div>
 
         </div>
 
-
-
-
-    </main>
+    </div>
 
     <!--* footer -->
     <footer>

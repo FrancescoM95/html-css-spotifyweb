@@ -1,0 +1,32 @@
+/*# SOPRA 639px  */
+
+@media screen and (min-width: 639px) {
+    nav {
+        width: 300px;
+        padding: 20px;
+        padding-bottom: 5px;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .main-content {
+        flex-basis: calc(100% - 300px);
+    }
+
+    #small-logo {
+        display: none;
+    }
+
+    nav img {
+        height: 30px;
+    }
+
+    .box-profile {
+        gap: 10px;
+    }
+
+
+
+}
