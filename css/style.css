@@ -54,18 +54,11 @@ section {
     margin-top: 30px;
 }
 
-.fas,
-.far {
-    cursor: pointer;
-}
-
 /** Utils */
 
 .hidden {
     display: none;
 }
-
-
 
 /*^ Layout */
 
@@ -112,7 +105,6 @@ nav {
     font-size: 0.8rem;
     font-weight: 600;
 
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -150,7 +142,9 @@ nav {
 }
 
 .nav-list-item>*,
-.playlist-ul li {
+.playlist-ul li,
+.fas,
+.far {
     cursor: pointer;
 }
 
@@ -238,7 +232,6 @@ header {
 }
 
 .btn {
-
     font-size: 0.8rem;
     text-transform: uppercase;
     color: #fff;
@@ -386,7 +379,9 @@ footer {
     background-color: #C1C1C1;
 }
 
-/*# HOVER */
+
+
+/*@ HOVER */
 
 .upper-content a:hover {
     color: #fff;
@@ -474,7 +469,7 @@ footer h4:hover {
     display: block;
 }
 
-/*# AFTER/BEFORE */
+/*@ AFTER/BEFORE */
 
 .nav-list-item.selected::before {
     content: '';
