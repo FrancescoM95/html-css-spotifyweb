@@ -234,6 +234,7 @@ header {
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1;
 }
 
 .btn {
@@ -375,6 +376,7 @@ footer {
     width: 70px;
     background-color: #5A5A5A;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .line-progress {
