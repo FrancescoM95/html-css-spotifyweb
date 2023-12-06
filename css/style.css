@@ -17,7 +17,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #141922;
     color: var(--primary-color);
-    min-width: 500px;
 }
 
 img {
@@ -54,15 +53,20 @@ section {
     margin-top: 30px;
 }
 
+hr {
+    width: 100%;
+    border-color: var(--primary-color);
+}
+
 /** Utils */
 
 .hidden {
     display: none;
 }
 
-/*^ Layout */
+/* Layout */
 
-/*| ROW */
+/* ROW */
 
 .row {
     display: flex;
@@ -75,7 +79,7 @@ section {
     text-align: center;
 }
 
-/*| CONTAINER */
+/* CONTAINER */
 
 .container {
     max-width: 100%;
@@ -94,16 +98,15 @@ section {
 .left-navbar {
     background-color: #000;
     font-size: 0.8rem;
-    font-weight: 600;
     padding: 10px;
+    position: relative;
 
     width: 50px;
     height: 100%;
     flex-shrink: 0;
-    position: relative;
 }
 
-/*# NAVBAR TOP */
+/*| NAVBAR TOP */
 
 .left-navbar .navbar-top {
     height: calc(100% - 80px);
@@ -119,10 +122,6 @@ section {
 
 .nav-list {
     height: 120px;
-}
-
-.nav-list,
-.playlist {
     margin-top: 20px;
 }
 
@@ -133,7 +132,7 @@ section {
     margin: 10px 0;
 }
 
-.nav-list-item.selected {
+.nav-list-item.selected a {
     color: #fff;
 }
 
@@ -153,6 +152,8 @@ section {
 
 .playlist {
     height: calc(100% - 250px);
+    font-weight: 600;
+    margin-top: 20px;
 }
 
 .playlist .fa-plus {
@@ -169,7 +170,7 @@ section {
     overflow: auto;
 }
 
-/*# NAVBAR BOTTOM */
+/*| NAVBAR BOTTOM */
 
 .navbar-bottom {
     height: 80px;
@@ -181,15 +182,11 @@ section {
     margin-top: 10px;
 }
 
-.navbar-bottom>div {
+#download,
+#profile {
     display: flex;
     align-items: center;
     gap: 15px;
-}
-
-hr {
-    width: 100%;
-    border-color: var(--primary-color);
 }
 
 #download {
@@ -223,7 +220,7 @@ hr {
     overflow: auto;
 }
 
-/*^ HEADER */
+/*| HEADER */
 
 header {
     background-color: rgba(8, 11, 18, 0.9);
@@ -252,14 +249,15 @@ header {
     border-radius: 20px;
 }
 
-
-/*^ MAIN */
+/** main */
 
 main {
     padding: 20px;
 }
 
-main ul {
+/*| MAIN NAVBAR */
+
+.main-navbar ul {
     text-transform: uppercase;
     font-size: 0.8rem;
     margin-bottom: 40px;
@@ -270,6 +268,8 @@ main ul {
     gap: 20px;
     row-gap: 40px;
 }
+
+/*| SECTION */
 
 section>h4 {
     margin-bottom: 30px;
@@ -298,14 +298,13 @@ footer {
     gap: 10px;
 }
 
-
-/*# LEFT FOOTER */
+/*| LEFT FOOTER */
 
 .left-footer,
 .right-footer {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .left-footer {
@@ -332,7 +331,7 @@ footer {
     margin-right: 10px;
 }
 
-/*# CENTRAL FOOTER */
+/*| CENTRAL FOOTER */
 
 .central-footer {
     display: flex;
@@ -351,7 +350,7 @@ footer {
 .cfoot-top {
     font-size: 1rem;
     margin-bottom: 10px;
-    gap: 25px;
+    gap: 20px;
 }
 
 .fa-circle-play {
@@ -359,11 +358,22 @@ footer {
     margin: 0 20px;
 }
 
-.cfoot-bottom .volume-line {
-    width: 30vw;
+.progress-line {
+    height: 5px;
+    width: calc(50px + 20vw);
+    background-color: #5A5A5A;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
-/*# RIGHT FOOTER */
+.line-progress {
+    height: 5px;
+    width: calc(50px);
+    border-radius: 15px;
+    background-color: #C1C1C1;
+}
+
+/*| RIGHT FOOTER */
 
 .right-footer {
     justify-content: flex-end;
@@ -374,23 +384,15 @@ footer {
     gap: 5px;
 }
 
-.volume-line {
-    height: 5px;
-    width: 70px;
-    background-color: #5A5A5A;
-    border-radius: 15px;
-    cursor: pointer;
+.right-footer .progress-line {
+    width: 60px;
 }
 
-.line-progress {
-    height: 5px;
+.right-footer .line-progress {
     width: 30px;
-    border-radius: 15px;
-    background-color: #C1C1C1;
 }
 
-
-/*@ HOVER */
+/*@ HOVER @*/
 
 .upper-content a:hover {
     color: #fff;
@@ -456,7 +458,7 @@ footer h4:hover {
 
 .line-selected {
     height: 5px;
-    width: 30px;
+    width: 100%;
     border-radius: 15px;
     background-color: #ADFF2F;
     position: relative;
@@ -475,11 +477,11 @@ footer h4:hover {
     right: 0;
 }
 
-.volume-line:hover .line-selected {
+.progress-line:hover .line-selected {
     display: block;
 }
 
-/*@ AFTER/BEFORE */
+/*@@ AFTER/BEFORE @@*/
 
 .nav-list-item.selected::before {
     content: '';
