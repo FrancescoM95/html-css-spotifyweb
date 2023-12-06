@@ -91,7 +91,7 @@ section {
 
 /*# LEFT NAVABAR */
 
-nav {
+.left-navbar {
     background-color: #000;
     font-size: 0.8rem;
     font-weight: 600;
@@ -105,7 +105,7 @@ nav {
 
 /*# NAVBAR TOP */
 
-.navbar-top {
+.left-navbar .navbar-top {
     height: calc(100% - 80px);
 }
 
@@ -493,7 +493,7 @@ footer h4:hover {
     margin-left: -10px;
 }
 
-.container ul li:first-child::after {
+.main-navbar ul li:first-child::after {
     content: '';
     border: 1px solid #ADFF2F;
     display: block;
@@ -501,6 +501,6 @@ footer h4:hover {
     margin: 5px auto;
 }
 
-.container ul li:first-child {
+.main-navbar ul li:first-child {
     margin-bottom: -11px;
 }

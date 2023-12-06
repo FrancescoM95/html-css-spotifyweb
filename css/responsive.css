@@ -1,7 +1,7 @@
 /*# SOPRA 639px  */
 
 @media screen and (min-width: 639px) {
-    nav {
+    .left-navbar {
         width: 250px;
         padding: 20px;
         padding-bottom: 5px;
@@ -15,7 +15,7 @@
         display: none;
     }
 
-    nav img {
+    .left-navbar img {
         height: 30px;
     }
 
