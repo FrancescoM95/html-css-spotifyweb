@@ -1,3 +1,35 @@
+/*! BONUS FOOTER SOTTO I 500px */
+
+@media screen and (max-width: 500px) {
+    .left-footer .folder {
+        display: none;
+    }
+
+
+    .central-footer .fa-circle-play {
+        margin: 0;
+    }
+
+    .central-footer .progress-line {
+        width: calc(30px + 20vw);
+    }
+
+    .cfoot-bottom {
+        gap: 10px;
+    }
+
+    .right-footer .fa-list-ul,
+    .right-footer .fa-desktop {
+        display: none;
+    }
+
+    .right-footer .progress-line {
+        width: 40px;
+    }
+
+}
+
+
 /*# SOPRA 576px  */
 
 @media screen and (min-width: 576px) {
@@ -28,7 +60,7 @@
     }
 
     .left-footer h3 {
-        margin-right: 30px;
+        margin-right: 28px;
     }
 
     .volume {
@@ -37,6 +69,10 @@
 
     .volume-line {
         width: 100px;
+    }
+
+    .fa-heart {
+        margin-right: 10px;
     }
 }
 
@@ -50,9 +86,25 @@
     .left-footer h3 {
         margin-right: 50px;
     }
+
+    .central-footer .fa-circle-play {
+        margin: 0 30px;
+    }
+
+    .cfoot-top {
+        gap: 30px;
+    }
+
+    footer {
+        padding: 10px 20px;
+    }
+
+    .right-footer .progress-line {
+        width: 80px;
+    }
 }
 
-/*# SOPRA 1440px  */
+/*# SOPRA 1180px  */
 
 @media screen and (min-width: 1180px) {
     .col {

@@ -295,7 +295,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 /*| LEFT FOOTER */
@@ -328,7 +328,7 @@ footer {
 }
 
 .fa-heart {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 /*| CENTRAL FOOTER */
@@ -359,8 +359,9 @@ footer {
 }
 
 .progress-line {
+    width: calc(50px + 15vw);
+
     height: 5px;
-    width: calc(50px + 20vw);
     background-color: #5A5A5A;
     border-radius: 15px;
     cursor: pointer;
@@ -368,7 +369,7 @@ footer {
 
 .line-progress {
     height: 5px;
-    width: calc(50px);
+    width: 20%;
     border-radius: 15px;
     background-color: #C1C1C1;
 }
@@ -389,7 +390,7 @@ footer {
 }
 
 .right-footer .line-progress {
-    width: 30px;
+    width: 30%;
 }
 
 /*@ HOVER @*/
